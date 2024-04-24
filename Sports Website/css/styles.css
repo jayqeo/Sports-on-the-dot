@@ -1,0 +1,883 @@
+* {
+  font-family: "Poppins:", Sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-image: url(../images/background.jpg);
+  background-attachment: fixed; /*edit*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: center;
+}
+
+
+
+
+
+
+/* Keyframes */
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+}
+  @keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+
+
+ 
+
+.section {
+  background-color: rgba(27, 27, 27, 0.3); /* Background color with alpha value */
+display: flex;
+justify-content: space-between;
+padding: 40px;
+width: 70%;
+margin: 2rem auto 0 auto;
+border-radius: 30px;
+box-shadow: 0 0 70px rgba(255, 255, 255, 0.1);
+animation: fade-up 0.5s;
+}
+
+.section img {
+height: 800px;
+
+}
+
+.section h1{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section p{
+  color: rgb(255, 255, 255);
+  margin-right: 15px;
+  font-size: 25px;
+  padding-top: 20px;
+  text-indent: 50px;
+    }
+
+  
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 100px;
+background: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+
+animation: fade-up 0.5s
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+span{
+  color: rgb(218, 22, 22);
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 2px;
+}
+
+
+/*Navigation*/
+
+
+.header .navbar a {
+  position: relative;
+  font-size: 1.3vw;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.header .navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.header .navbar a:hover::before {
+width: 100%;
+}
+
+.header .navbar a:hover {
+color: red;
+
+}
+
+/* super bowl logo */
+.sbimage {
+text-align: center;
+animation: fade-up 0.5s
+}
+
+.sbimage img{
+  padding-top: 20px;
+  max-width: 300px;
+  display: block;
+  margin: 5rem auto 0 auto;
+}
+
+/* footer information*/
+footer {
+    background-color: transparent; /* Background color of the footer */
+    color: #fff; /* Text color of the copyright */
+    text-align: center; /* Center align the text */
+    padding: 40px 40px; /* Add padding to the top and bottom */
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+
+/*Stat leaders Offense */
+
+.offensiveheader h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 45px;
+  animation: fade-up 0.5s
+}
+
+.statleader{
+  width: 1300px;
+  height: 500px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+  padding: 0;
+  margin-top: 1px;
+  animation: fade-up 0.5s
+  
+}
+
+.box{
+  width: 800px;
+  height: 400px;
+margin: 10px;
+}
+
+.box1{
+  width: 800px;
+  height: 400px;
+margin: 150px;
+}
+
+.box2{
+  margin: 10px;
+  width: 800px;
+  height: 400px;
+
+}
+
+.statleader img{
+  width: 300px;
+  height: 200px;
+  
+}
+
+.statleader p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+.statleader h2 {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+   font-size: 25px;
+}
+
+.statleader h3 {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+ 
+}
+
+.statleader span {
+  color: rgb(255, 255, 255);
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 1px;
+}
+
+/*Stat leaders Defense */
+
+.defensiveheader h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.statleader2{
+  width: 1300px;
+  height: 500px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+  padding: 0;
+  margin-top: 1px;
+  
+}
+
+.box{
+  width: 800px;
+  height: 400px;
+margin: 10px;
+}
+
+.box1{
+  width: 800px;
+  height: 400px;
+margin: 150px;
+}
+
+.box2{
+  margin: 10px;
+  width: 800px;
+  height: 400px;
+
+}
+
+.statleader2 img{
+  width: 300px;
+  height: 200px;
+  
+}
+
+.statleader2 p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+.statleader2 h2 {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+   font-size: 25px;
+}
+
+.statleader2 h3 {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+ 
+}
+
+.statleader2 span {
+  color: rgb(255, 255, 255);
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 1px;
+}
+
+
+/* Top Header Stats*/
+
+.topheaderstats h1 {
+font-size: 100px;
+text-align: center;
+color: white;
+padding-top: 150px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Scores Home */
+
+.scores {
+  background-color: transparent;
+display: flex;
+justify-content: space-between;
+padding: 40px;
+width: 70%;
+margin: 2rem auto 0 auto;
+border-radius: 30px;
+animation: fade-up 0.5s
+}
+
+.scores .teamlogo1 img{
+  height: 200px;
+  width: 70%;
+  float: left;
+  padding: 15px;
+}
+
+.scores .teamlogo2 img {
+  height: 200px;
+  width: 70%;
+  float: right;
+  padding: 15px;
+}
+.scores .teamlogo1 h1 {
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  display: flex;
+  margin: 55px -10px 25px 100px;
+  font-size: 4vw;  
+}
+
+.scores .teamlogo2 h1 {
+  justify-content: space-between;
+  text-align: center;
+  color: rgb(95, 95, 95);
+  display: flex;
+  margin: 55px 5px 5px 5px;
+  font-size: 4vw;  
+}
+
+.finalscore h1{
+  justify-content: space-between;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin: 60px 20px 20px 50px;
+  font-size: 5vw; 
+}
+
+/* Super Bowl Video*/
+
+
+
+.sbvideo {
+  background-color: rgba(27, 27, 27, 0.3); /* Background color with alpha value */
+display: block;
+justify-content: space-between;
+padding: 90px;
+width: 80%;
+margin: 2rem auto 0 auto;
+border-radius: 30px;
+box-shadow: 0 0 70px rgba(255, 255, 255, 0.1);
+text-align: center;
+margin-top: 40px;
+}
+
+.sbvideo p {
+  color: rgb(228, 228, 228);
+  font-size: 1vw;
+  margin-top: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sbvideo h1 {
+  color: white;
+  font-size: 2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 45px;
+  font-weight: 1000;
+}
+
+
+
+/* Sports page header*/
+
+.sportsheader {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  animation: fade-up 0.5s 
+}
+
+/* Table Styles */
+
+.td img{
+  width: 16px;
+  height: 1px;
+  margin-right: .50rem;
+  border-radius: 10%;
+
+  vertical-align: middle;
+}
+
+.table, th, td {
+  padding: 1.5rem;
+  border-collapse: collapse;
+  text-align: left;
+  color: white;
+}
+
+.table {
+  width: 72vw;
+  height: 95vh;
+  background-color: rgba(27, 27, 27, 0.164);
+  backdrop-filter: blur(9px);
+  box-shadow: 0 0 70px rgba(255, 255, 255, 0.1);
+  border-radius: .8rem;
+  margin: 2rem auto 0 auto;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.table_header {
+  width: 100%;
+  height: 10%;
+  background-color: rgba(134, 134, 134, 0);
+  padding: .8rem 1rem;
+}
+
+.table_header h1 {
+  color: white;
+  text-align: center;
+}
+
+.table_body {
+  width: 95%;
+  max-height: calc(89% - 1.6rem);
+  background-color: rgba(255, 255, 255, 0);
+  margin: .8rem auto;
+  border-radius: .6rem;
+  overflow: auto;
+}
+
+.table_body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb {
+visibility: visible;
+
+}
+
+table {
+  width: 100%;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #7a7a7afe;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(20, 20, 20, 0.733);
+}
+
+tbody tr:hover {
+  background-color: rgba(68, 68, 68, 0.356);
+}
+
+/* Stat medals */
+.gold {
+  padding: .4rem 0;
+  border-radius: 2rem;
+  background-color: rgba(197, 186, 32, 0.61);
+  
+}
+
+.silver {
+  padding: .4rem 0;
+  border-radius: 2rem;
+  background-color: rgba(153, 153, 153, 0.61);
+}
+
+.bronze {
+  padding: .4rem 0;
+  border-radius: 2rem;
+  background-color: #cd80327e;
+}
+
+/* Table pictures */
+
+.image-cell {
+  text-align: center;
+}
+
+.image-cell img {
+  display: block; 
+  margin: 0 auto ; /* Center the image horizontally */
+}
+
+.image-cell p {
+  margin-top: 10px; 
+}
+
+@media (max-width: 1000px) {
+  td:not(:first-of-type) {
+    min-width: 12.1rem;
+  }
+}
+
+/* Table Tab Styles */
+
+.tabs {
+  width: 80%;
+  background-color: rgba(31, 31, 31, 0.575);
+  padding: 30px;
+  box-shadow: 0 2px 16px rgba(0,0,0,.1);
+  border-radius: 20px;
+  margin: 2rem auto 0 auto;
+  justify-content: center;
+  
+  align-items: center;
+}
+
+.tab_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid rgba(229,229,229);
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.tab_btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #919191;
+  background: none;
+  border: none;
+  padding: 18px;
+  cursor: pointer;
+}
+
+.content_box {
+  padding: 20px;
+}
+
+.content_box .content {
+  display: none;
+  animation: moving .5s ease;
+}
+
+
+@keyframes moving {
+  from{transform: translateX(50px);opacity: 0;}
+  to{transform: translateX(0px);opacity: 1;}
+}
+
+.content_box .content.active {
+  display: block;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+}
+
+.tab_box .tab_btn.active {
+  color: rgb(184, 75, 75);
+}
+
+.line {
+  position: absolute;
+  top: 75px;
+  left: 17px;
+  width: 90px;
+  height: 5px;
+  background-color: rgb(184, 75, 75);
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+}
+
+
+/* MVP styles */
+
+.section1 {
+  background-color: rgba(27, 27, 27, 0.3); 
+display: flex;
+justify-content: space-between;
+padding: 40px;
+width: 70%;
+margin: 5rem auto 0 auto;
+border-radius: 30px;
+box-shadow: 0 0 70px rgba(255, 255, 255, 0.1);
+animation: fade-up 0.5s;
+}
+
+.section1 img {
+height: 700px;
+
+}
+
+.section1 h1{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1 h2{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1 span {
+  color: rgb(85, 40, 147);
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 2px;
+}
+
+.section1 p{
+  color: rgb(255, 255, 255);
+  margin-right: 15px;
+  font-size: 25px;
+  padding-top: 20px;
+  text-indent: 50px;
+}
+
+/* About Styles */
+
+.section2 {
+  background-color: rgba(27, 27, 27, 0.3); 
+display: flex;
+justify-content: space-between;
+padding: 40px;
+width: 85%;
+margin: 5rem auto 0 auto;
+border-radius: 30px;
+box-shadow: 0 0 70px rgba(255, 255, 255, 0.1);
+animation: fade-up 0.5s;
+}
+
+.section2 img {
+height: 400px;
+
+}
+
+.section2 h1{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section2 h2{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section2 span {
+  color: rgb(147, 40, 40);
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 2px;
+}
+
+.section2 p{
+  color: rgb(255, 255, 255);
+  margin-right: 15px;
+  font-size: 25px;
+  padding-top: 20px;
+  text-indent: 50px;
+}
+
+
+/*All Time Stats styles*/
+
+.section4 h3 {
+  color: white;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+
+.section4 ul {
+  list-style-type: square; 
+  padding-left: 20px;     
+  margin: 10px 0;        
+  background-color: #69656583; 
+  border: 1px solid #c7b66c; 
+  width: 300px;           
+}
+
+
+.section4 li {
+  color: #ffffff;            
+  padding: 20px;           
+  border-bottom: 1px solid #dddddd; 
+}
+
+
+.section4 li:last-child {
+  border-bottom: none;
+}
+
+.section4 {
+  background-color: rgba(37, 37, 37, 0.644); 
+display: flex;
+justify-content: space-between;
+padding: 40px;
+width: 70%;
+margin: 5rem auto 0 auto;
+border-radius: 30px;
+box-shadow: 0 0 70px rgba(255, 255, 255, 0.1);
+animation: fade-up 0.5s;
+}
+
+.section4 img {
+height: 450px;
+
+}
+
+.section4 h1{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section4 h2{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section4 span {
+  color: rgb(224, 224, 224);
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 2px;
+}
+
+.section4 p{
+  color: rgb(255, 255, 255);
+  margin-right: 15px;
+  font-size: 25px;
+  padding-top: 20px;
+  text-indent: 50px;
+}
+
+
+/* contact styles */
+
+
+.biostyles {
+  display: flex;
+  align-items: center;
+  background-color: #494949c9;
+  padding: 20px;
+  border: 1px solid #ff000098;
+  box-shadow: 0 4px 8px rgba(236, 9, 9, 0.397);
+  max-width: 1200px;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.biostyles img {
+  width: 350px;
+  height: 325px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.biostyles p {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+  background-color: #666;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #75726c;
+  box-shadow: 0 2px 4px rgba(194, 194, 194, 0.582);
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.biostyles p:hover {
+  background-color: #a38282; 
+  border-color: #c09797; 
+}
+
+.biostyles h2 {
+  color: #ffffff; 
+  text-align: center; 
+  font-family: 'Arial', sans-serif; 
+  margin-top: 0; 
+  padding-top: 20px; 
+}
+
+
+
+
+
+
+
+
